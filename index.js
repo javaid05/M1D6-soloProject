@@ -23,3 +23,11 @@ printNewLine("Excercise A");
 
 let test = "test";
 console.log(test);
+
+/* EXERCISE B
+    Create a variable called sum and assign to it the result of the sum between the numbers 10 and 20.
+*/
+printNewLine("Excercise B");
+
+let sum = 10 + 20;
+console.log("sum between numbers 10 and 20 is:", sum);
