@@ -60,3 +60,10 @@ console.log(me);
 printNewLine("Exercise E");
 delete me.age;
 console.log("After deleting the Age", me);
+
+/* EXERCISE F
+   Write a piece of code for programmatically adding to the me object you defined before an array called skills, containing the programming languages you know right now.
+*/
+printNewLine("Exercise F");
+me.skills = ["HTML, CSS,Basic Js"];
+console.log("Adding property of object that created before:", me);
