@@ -26,3 +26,15 @@ const whoIsBigger = function (num1, num2) {
   else return num2;
 };
 console.log(whoIsBigger(40, 30));
+
+/* EXERCISE 3
+    Write a function called splitMe which receives a string as a parameter and returns an array with every word in that string.
+    Ex.: splitMe("I love coding") => returns ["I", "Love", "Coding"]
+*/
+
+printNewLine("Exercise 3");
+
+const splitMe = function (string) {
+  return string.split(" ");
+};
+console.log(splitMe("I Love Coding"));
