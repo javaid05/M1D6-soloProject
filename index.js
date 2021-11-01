@@ -11,6 +11,8 @@ ASSIGNMENT RULES
 
 // JS Basics
 
+/* Before Start of Exercise we have create a Function called PrintNewLine before start of every Exercise */
+
 /* EXERCISE A
    Create a variable called test and assign a string value to it.
 */
