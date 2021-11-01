@@ -67,3 +67,22 @@ const onlyLetters = function (string3) {
 };
 
 onlyLetters("I have 4 dogs");
+
+/* EXERCISE 6
+   Write a function called isThisAnEmail which receives a string as a parameter and returns true if the string is a valid email address.
+*/
+
+printNewLine("Exercise 6");
+
+const isThisAnEmail = function (string4) {
+  let splitStr = string4.split("");
+  let at = "@";
+  let dot = ".";
+  if (splitStr.includes(at) && splitStr.includes(dot)) {
+    return true;
+  } else {
+    return `${string4} is not a valid email address.`;
+  }
+};
+
+console.log(isThisAnEmail("javaidgmail.com"));
