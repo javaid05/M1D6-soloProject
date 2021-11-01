@@ -52,3 +52,11 @@ let me = {
   age: "32",
 };
 console.log(me);
+
+/* EXERCISE E
+    Write a piece of code for programmatically removing the age property from the previously create object.
+*/
+
+printNewLine("Exercise E");
+delete me.age;
+console.log("After deleting the Age", me);
