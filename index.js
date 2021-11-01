@@ -19,7 +19,7 @@ const printNewLine = function (question) {
     `\n<--------------------Answer ${question}----------------->\n\n`
   );
 };
-printNewLine("Excercise A");
+printNewLine("Exercise A");
 
 let test = "test";
 console.log(test);
@@ -27,7 +27,17 @@ console.log(test);
 /* EXERCISE B
     Create a variable called sum and assign to it the result of the sum between the numbers 10 and 20.
 */
-printNewLine("Excercise B");
+printNewLine("Exercise B");
 
 let sum = 10 + 20;
 console.log("sum between numbers 10 and 20 is:", sum);
+
+/* EXERCISE C
+    Create a variable called random and assign to it a random number between 0 and 20 (it should be randomly created at each execution).
+*/
+
+printNewLine("Exercise C");
+
+let random;
+random = Math.floor(Math.random() * 20); //it will print single number at each execution
+console.log("Random number at each execution:", random);
