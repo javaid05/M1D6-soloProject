@@ -41,3 +41,14 @@ printNewLine("Exercise C");
 let random;
 random = Math.floor(Math.random() * 20); //it will print single number at each execution
 console.log("Random number at each execution:", random);
+
+/* EXERCISE D
+    Create a variable called me and assign to it an object containing the following information: name = your name, surname = your surname, age = your age.
+*/
+printNewLine("Exercise D");
+let me = {
+  name: "Muhammad Javaid",
+  surname: "Javaid",
+  age: "32",
+};
+console.log(me);
