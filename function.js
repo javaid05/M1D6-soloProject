@@ -135,3 +135,22 @@ const howManyDays = function (getDate) {
   return Math.floor(difference / (1000 * 60 * 60 * 24));
 };
 console.log(howManyDays(new Date("2021 -01-11")));
+
+/* EXERCISE 10
+   Write a function called isTodayMyBirthday which should return true if today's your birthday, false otherwise.
+*/
+
+printNewLine("Exercise 10");
+
+const isTodayMyBirthday = function () {
+  let todayDate = new Date();
+  let currentDay = todayDate.getDate();
+  let currentMonth = todayDate.getMonth();
+  let myBirthday = new Date("Sep 01, 1986 ");
+  let birthdayDay = myBirthday.getDate();
+  let birthdayMonth = myBirthday.getMonth();
+  return currentDay === birthdayDay && currentMonth === birthdayMonth
+    ? true
+    : false;
+};
+console.log(isTodayMyBirthday());
