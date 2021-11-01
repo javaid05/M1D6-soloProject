@@ -65,5 +65,12 @@ console.log("After deleting the Age", me);
    Write a piece of code for programmatically adding to the me object you defined before an array called skills, containing the programming languages you know right now.
 */
 printNewLine("Exercise F");
-me.skills = ["HTML, CSS,Basic Js"];
+me.skills = ["HTML", "CSS", "Basic Js"];
 console.log("Adding property of object that created before:", me);
+// if we write ["HHTML,CSS,BasicJs"] its will consider a single element of array
+/* EXERCISE G
+   Write a piece of code for programmatically removing the last skill from the skills array inside the me object.
+*/
+printNewLine("Exercise G");
+me.skills.pop();
+console.log(me);
