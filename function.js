@@ -50,3 +50,20 @@ const deleteOne = function (string1, boolean) {
     : string1.substr(0, string1.length - 1);
 };
 console.log(deleteOne("I am Javaid", false));
+
+/* EXERCISE 5
+   Write a function called onlyLetters which receives a string as a parameter and returns it removing all the digits.
+   Ex.: onlyLetters("I have 4 dogs") => returns "I have  dogs"
+*/
+printNewLine("Exercise 5");
+const onlyLetters = function (string3) {
+  let arrayOfStringElements = string3.split("");
+  for (let i = 0; i < arrayOfStringElements.length; i++) {
+    if (!isNaN(arrayOfStringElements[i])) {
+      arrayOfStringElements[i] = " ";
+    }
+  }
+  console.log(arrayOfStringElements.join(""));
+};
+
+onlyLetters("I have 4 dogs");
