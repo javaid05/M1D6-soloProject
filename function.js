@@ -38,3 +38,15 @@ const splitMe = function (string) {
   return string.split(" ");
 };
 console.log(splitMe("I Love Coding"));
+
+/* EXERCISE 4
+    Write a function called deleteOne which receives a string and a boolean as parameters.
+    If the boolean value is true it should return the string without the first letter, otherwise it should remove the last one from it.
+*/
+printNewLine("Exercise 4");
+const deleteOne = function (string1, boolean) {
+  return boolean === true
+    ? string1.slice(1)
+    : string1.substr(0, string1.length - 1);
+};
+console.log(deleteOne("I am Javaid", false));
