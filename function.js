@@ -107,3 +107,31 @@ const whatDayIsIt = function () {
 };
 
 whatDayIsIt();
+
+/* EXERCISE 8
+    Write a function called rollTheDices which receives a number as a parameter.
+    It should invoke the dice() function defined in Ex1 the specified amount of times,
+    and return an object containing a sum property holding the sum of all values extracted
+    and a values array containing the single values of the dicerolls themselves.
+    Example: RollTheDices(3) => returns {
+        sum: 10
+        values: [3, 3, 4]
+    }
+*/
+printNewLine("Exercise 8");
+
+/* EXERCISE 9
+   Write a function called howManyDays which receives a date as a parameter and returns the number of days passed since that date.
+*/
+printNewLine("Exercise 9");
+
+/* EXERCISE 9
+   Write a function called howManyDays which receives a date as a parameter and returns the number of days passed since that date.
+*/
+
+const howManyDays = function (getDate) {
+  let today = Date.now();
+  let difference = today - getDate;
+  return Math.floor(difference / (1000 * 60 * 60 * 24));
+};
+console.log(howManyDays(new Date("2021 -01-11")));
