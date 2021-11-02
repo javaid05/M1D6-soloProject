@@ -138,7 +138,7 @@ deleteProp(movies[0], "Type");
 /* EXERCISE 12
     Write a function called oldestMovie which finds the oldest movie in the provided movies array.
 */
-printNewLine("Exercise 11");
+printNewLine("Exercise 12");
 
 // const oldestMovie = function () {
 //   let oldestMovieYear = movies[0].Year;
@@ -150,3 +150,14 @@ printNewLine("Exercise 11");
 //   console.log(`${oldestMovieYear}`);
 // };
 // oldestMovie();
+
+/* EXERCISE 13
+    Write a function called countMovies which returns the number of movies contained in the provided movies array.
+*/
+printNewLine("Exercise 13");
+
+const countMovies = function () {
+  let lenghtOfTotalMovie = movies.length;
+  console.log("total length of Movies in number", lenghtOfTotalMovie);
+};
+countMovies();
