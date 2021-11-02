@@ -175,3 +175,19 @@ const onlyTheTitles = function () {
 };
 
 onlyTheTitles();
+
+/* EXERCISE 15
+   Write a function called onlyInThisMillennium which returns only the movies produced in this millennium from the provided movies array.
+*/
+printNewLine("Exercise 15");
+// const onlyInThisMillennium = function () {
+//   let currentMillennium = [];
+//   for (let i = 0; i <= movies.length; i++)
+//     if (movies[i].Year >= 2000) {
+//       /* in above cif condition canont find the year property */
+//       currentMillennium.push(movies[i]);
+//     }
+//   console.log("currentMillennium Movie year", currentMillennium);
+// };
+
+// onlyInThisMillennium();
