@@ -128,12 +128,12 @@ printNewLine("Exercise 11");
    Write a function called deleteProp which receives an object and a string as parameters,
    and returns the given object after deleting its property named as the given string.
 */
-const deleteProp = function (obj, str) {
-  console.log(obj);
-  delete obj[str];
-  console.log(obj);
-};
-deleteProp(movies[0], "Type");
+// const deleteProp = function (obj, str) {
+//   console.log(obj);
+//   delete obj[str];
+//   console.log(obj);
+// };
+// deleteProp(movies[0], "Type");
 
 /* EXERCISE 12
     Write a function called oldestMovie which finds the oldest movie in the provided movies array.
@@ -156,67 +156,67 @@ printNewLine("Exercise 12");
 */
 printNewLine("Exercise 13");
 
-const countMovies = function () {
-  let lenghtOfTotalMovie = movies.length;
-  console.log("total length of Movies in number", lenghtOfTotalMovie);
-};
-countMovies();
+// const countMovies = function () {
+//   let lenghtOfTotalMovie = movies.length;
+//   console.log("total length of Movies in number", lenghtOfTotalMovie);
+// };
+// countMovies();
 /* EXERCISE 14
     Write a function called onlyTheTitles which creates an array with just the titles of the movies contained in the provided movies array.
 */
 printNewLine("Exercise 14");
 
-const onlyTheTitles = function () {
-  let moviesTitle = [];
-  for (let i = 0; i < movies.length; i++) {
-    moviesTitle.push(movies[i].Title);
-    console.log("Movies Title", moviesTitle);
-  }
-};
+// const onlyTheTitles = function () {
+//   let moviesTitle = [];
+//   for (let i = 0; i < movies.length; i++) {
+//     moviesTitle.push(movies[i].Title);
+//     console.log("Movies Title", moviesTitle);
+//   }
+// };
 
-onlyTheTitles();
+// onlyTheTitles();
 
 /* EXERCISE 15
    Write a function called onlyInThisMillennium which returns only the movies produced in this millennium from the provided movies array.
 */
 printNewLine("Exercise 15");
-// const onlyInThisMillennium = function () {
-//   let currentMillennium = [];
-//   for (let i = 0; i <= movies.length; i++)
-//     if (movies[i].Year >= 2000) {
-//       /* in above cif condition canont find the year property */
-//       currentMillennium.push(movies[i]);
-//     }
-//   console.log("currentMillennium Movie year", currentMillennium);
-// };
+const onlyInThisMillennium = function () {
+  let currentMillennium = [];
+  for (let i = 0; i < movies.length; i++) {
+    if (parseInt(movies[i].Year) >= 2000) {
+      currentMillennium.push(movies[i]);
+    }
+  }
+  console.log("currentMillennium Movie year", currentMillennium);
+};
 
-// onlyInThisMillennium();
+onlyInThisMillennium();
 
 /* EXERCISE 16
     Write a function called getMovieById which receives an id as a parameter and returns the movie with the given id from the provided movies array.
 */
-printNewLine("Exercise 16");
+// printNewLine("Exercise 16");
 
-const getMovieById = function (getMovieID) {
-  let movieID = [];
-  for (let i = 0; i < movies.length; i++) {
-    if (getMovieID === movies[i].imdbID) {
-      movieID = movies[i];
-    }
-  }
-  console.log(movieID);
-};
-getMovieById("tt1731697");
+// const getMovieById = function (getMovieID) {
+//   let movieID = [];
+//   for (let i = 0; i < movies.length; i++) {
+//     if (getMovieID === movies[i].imdbID) {
+//       movieID = movies[i];
+//     }
+//   }
+//   console.log(movieID);
+// };
+// getMovieById("tt1731697");
 
 /* EXERCISE 17
     Write a function called sumAllTheYears which returns the sum of all the years in which the movies in the provided movies array have been produced.
 */
 printNewLine("Exercise 17");
-const sumAllTheYears = function () {
-  let sumOfAllYears = 0;
-  for (let i = 0; i < movies.length; i++) {
-    sumOfAllYears += parseInt(movies[i].Year);
-  }
-  console.log(sumOfAllYears);
-};
-sumAllTheYears();
+// const sumAllTheYears = function () {
+//   let sumOfAllYears = 0;
+//   for (let i = 0; i < movies.length; i++) {
+//     sumOfAllYears += parseInt(movies[i].Year);
+//   }
+//   console.log(sumOfAllYears);
+// };
+// sumAllTheYears();
