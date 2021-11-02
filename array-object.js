@@ -191,3 +191,19 @@ printNewLine("Exercise 15");
 // };
 
 // onlyInThisMillennium();
+
+/* EXERCISE 16
+    Write a function called getMovieById which receives an id as a parameter and returns the movie with the given id from the provided movies array.
+*/
+printNewLine("Exercise 16");
+
+const getMovieById = function (getMovieID) {
+  let movieID = [];
+  for (let i = 0; i < movies.length; i++) {
+    if (getMovieID === movies[i].imdbID) {
+      movieID = movies[i];
+    }
+  }
+  console.log(movieID);
+};
+getMovieById("tt1731697");
