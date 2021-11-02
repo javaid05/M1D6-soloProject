@@ -134,3 +134,19 @@ const deleteProp = function (obj, str) {
   console.log(obj);
 };
 deleteProp(movies[0], "Type");
+
+/* EXERCISE 12
+    Write a function called oldestMovie which finds the oldest movie in the provided movies array.
+*/
+printNewLine("Exercise 11");
+
+// const oldestMovie = function () {
+//   let oldestMovieYear = movies[0].Year;
+//   for (let i = 0; i <= movies.length; i++)
+//     if (movies[i].Year > oldestMovieYear) {
+//       oldestMovieYear = movies[i].Year;
+//     }
+//   //did not catch the year ,error cannot read property year
+//   console.log(`${oldestMovieYear}`);
+// };
+// oldestMovie();
