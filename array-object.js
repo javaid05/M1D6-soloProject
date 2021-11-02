@@ -161,3 +161,17 @@ const countMovies = function () {
   console.log("total length of Movies in number", lenghtOfTotalMovie);
 };
 countMovies();
+/* EXERCISE 14
+    Write a function called onlyTheTitles which creates an array with just the titles of the movies contained in the provided movies array.
+*/
+printNewLine("Exercise 14");
+
+const onlyTheTitles = function () {
+  let moviesTitle = [];
+  for (let i = 0; i < movies.length; i++) {
+    moviesTitle.push(movies[i].Title);
+    console.log("Movies Title", moviesTitle);
+  }
+};
+
+onlyTheTitles();
